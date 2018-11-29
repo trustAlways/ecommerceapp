@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#c0171d</color>
+    <color name="login_bar">#ed1c24</color>
+
+    <color name="blue">#1DA1F3</color>
+    <color name="black">#000000</color>
+    <color name="grey">#8c8989</color>
+    <color name="white">#fffefe</color>
+    <color name="transparent">#00000000</color>
+    <color name="background">#323232</color>
+    <color name="brown">#781f1f</color>
+
+    <color name="gen_black">#000000</color>
+    <color name="gen_white">#FFFFFF</color>
+    <color name="green_light">#43A047</color>
+    <color name="grey_light">#E0E0E0</color>
+    <color name="searchviewcolor">#f7efef</color>
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+
+    <!-- Placeholder colors-->
+    <color name="stay_color">#999999</color>
+
+
+    <color name="selction">#ac6b6767</color>
+</resources>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/login_bar">
+
+            <TextView
+                android:id="@+id/search_products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="Order Detail"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_margin="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textSize="16dp"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="22dp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 8,999"
+                    android:textSize="14dp"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="3dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/orderno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order No "
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="4dp"
+                        android:padding="5dp"/>
+                    <TextView
+                        android:id="@+id/order_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order No "
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:padding="5dp"/>
+                    <TextView
+                        android:id="@+id/order_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Date"
+                        android:textSize="14dp"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_item_image"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp">
+
+                    <ImageView
+                        android:id="@+id/image_cartlist"
+                        android:layout_width="80dp"
+                        android:layout_height="0dp"
+                        android:layout_weight=".9"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/order_Status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Status"
+                        android:textSize="16dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_item_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coolpad Note 3"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:singleLine="true"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:layout_marginTop="8dp">
+
+                         <TextView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Price"
+                                   android:textSize="14dp"/>
+
+                         <TextView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                    android:text="Qty"
+                                    android:textSize="14dp"
+                                   android:layout_marginLeft="25dp"/>
+                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:id="@+id/product_price2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="1,000"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:id="@+id/Product_qty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="12"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="13dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_item_des"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginTop="35dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp">
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Mode"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:id="@+id/paymode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Cash"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="15dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Details"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="DC Transaction No"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Rs 4,000"
+                        android:gravity="right"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="42616099887765367"
+                    android:gravity="right"
+                    android:textSize="16dp"
+                    android:paddingLeft="1dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light"
+            android:layout_marginTop="1dp"/>
+
+        <Button
+            android:id="@+id/start_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/red"
+            android:layout_gravity="bottom"
+            android:text="START SHOPPING"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

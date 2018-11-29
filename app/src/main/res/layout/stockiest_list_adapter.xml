@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="2dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/x_et_bg">
+
+            <TextView
+                android:id="@+id/stockiest_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textSize="13dp"
+                android:text="ABC Stockiest"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/kmsfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textColor="@color/red"
+                android:paddingLeft="2dp"
+                android:layout_marginBottom="3dp"
+                android:text="0.3 kms away"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:background="@drawable/x_et_bg"
+            android:layout_marginLeft="1dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/priceandqty"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".99"
+                android:textColor="@color/red"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:text="1000 (25 Units available)"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

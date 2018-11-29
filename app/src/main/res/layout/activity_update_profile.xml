@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_item_details"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Activity.Activity.UpdateProfile">
+
+    <ScrollView
+        android:id="@+id/scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/login_bar"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="My Registered Profile"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/Imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="6dp"
+                        android:text="My Personal Information"
+                        android:textColor="@color/red"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/x_et_bg"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".15"
+                                android:padding="5dp"
+                                android:src="@drawable/user_icon" />
+
+                            <EditText
+                                android:id="@+id/user_name"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".8"
+                                android:background="@drawable/x_et_reg_log_bg"
+                                android:enabled="false"
+                                android:hint="Name"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/user_name_err"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="0dp"
+                                android:background="@color/white"
+                                android:hint="email"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:background="@drawable/x_et_bg"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".15"
+                                android:src="@drawable/email_icon"
+                                android:padding="5dp"
+                                />
+
+                            <EditText
+                                android:id="@+id/user_email"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".8"
+                                android:hint="Email"
+                                android:background="@drawable/x_et_reg_log_bg"
+                                android:maxLength="50"
+                                android:enabled="false"
+                                android:textSize="16sp"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/user_email_err"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:hint="email"
+                                android:visibility="gone"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:background="@drawable/x_et_bg"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".15"
+                                android:src="@drawable/mobile_icon"
+                                android:padding="5dp"
+                                />
+
+                            <EditText
+                                android:id="@+id/user_phone"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".8"
+                                android:hint="Phone Number"
+                                android:background="@drawable/x_et_reg_log_bg"
+                                android:maxLength="50"
+                                android:enabled="false"
+                                android:textSize="16sp"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/user_phone_err"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:hint="email"
+                                android:visibility="gone"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Billing Address"
+                        android:textColor="@color/red"
+                        android:background="@color/white"
+                        android:textSize="15sp"
+                        android:padding="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:background="@drawable/x_et_bg"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".15"
+                                android:src="@drawable/location_at"
+                                android:padding="5dp"
+                                />
+
+                            <EditText
+                                android:id="@+id/billing_add_1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".8"
+                                android:hint="Billing Address Line 1"
+                                android:background="@drawable/x_et_reg_log_bg"
+                                android:maxLength="50"
+                                android:inputType="textNoSuggestions|textCapWords"
+                                android:textSize="16sp"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/billing_add_1_err"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/white"
+                                android:hint="Enter the Password"
+                                android:visibility="gone"
+                                android:padding="0dp"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red" />
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:background="@drawable/x_et_bg"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".15"
+                                android:src="@drawable/location_at"
+                                android:padding="5dp"
+                                />
+
+                            <EditText
+                                android:id="@+id/billing_add_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".8"
+                                android:hint="Billing Address Line 2"
+                                android:background="@drawable/x_et_reg_log_bg"
+                                android:maxLength="50"
+                                android:inputType="textNoSuggestions|textCapWords"
+                                android:textSize="16sp"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/billing_add_2_err"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/white"
+                                android:hint="Enter the Password"
+                                android:visibility="gone"
+                                android:padding="0dp"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red" />
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Shipping Address"
+                        android:textColor="@color/red"
+                        android:background="@color/white"
+                        android:textSize="15sp"
+                        android:padding="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:background="@drawable/x_et_bg"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".15"
+                                android:src="@drawable/location_at"
+                                android:padding="5dp"
+                                />
+
+                            <EditText
+                                android:id="@+id/shipping_add_1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".8"
+                                android:hint="Shipping Address Line 1"
+                                android:background="@drawable/x_et_reg_log_bg"
+                                android:maxLength="50"
+                                android:inputType="textNoSuggestions|textCapWords"
+                                android:textSize="16sp"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/shipping_add_1_err"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/white"
+                                android:hint="Enter the Password"
+                                android:visibility="gone"
+                                android:padding="0dp"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:background="@drawable/x_et_bg"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".15"
+                                android:src="@drawable/location_at"
+                                android:padding="5dp"
+                                />
+
+                            <EditText
+                                android:id="@+id/shipping_add_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".8"
+                                android:hint="Shipping Address Line 2"
+                                android:background="@drawable/x_et_reg_log_bg"
+                                android:maxLength="50"
+                                android:inputType="textNoSuggestions|textCapWords"
+                                android:textSize="16sp"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/shipping_add_2_err"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/white"
+                                android:hint="Enter the Password"
+                                android:visibility="gone"
+                                android:padding="0dp"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_update_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="#d94040"
+                    android:text="Update Profile"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/bt_changepass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Click here to change the password"
+                    android:textSize="14dp"
+                    android:textColor="@color/login_bar"
+                    />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

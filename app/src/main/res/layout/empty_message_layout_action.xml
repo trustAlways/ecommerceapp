@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/ivEmptyStatesQ"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/logo"
+         />
+
+
+    <ImageView
+        android:id="@+id/ivEmptyStates"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="10sp"
+        android:src="@drawable/cart"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Your Cart is empty !"
+        android:textColor="@color/login_bar"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_shop_now"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:background="@color/red"
+        android:text="SHOP NOW"
+        android:textColor="@color/white" />
+</LinearLayout>

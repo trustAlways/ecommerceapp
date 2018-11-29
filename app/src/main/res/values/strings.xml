@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Medassi</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="term_condition">
+       Dummy text:
+        Its function as a filler or as a tool for comparing the visual impression of different typefaces
+        Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with
+
+        Incomprehensibility or readability? That is the question.
+        The most well-known dummy text is the Lorem Ipsum which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to proper Latin.
+        It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout.
+
+        Automatic recognition of Lorem Ipsum during the pre-press workflow
+       The spread of computers and layout programmes thus made dummy text better known. While in earlier times several lines of the Lorem Ipsum text were repeated in the creation of dummy texts, today the full text of Ciceros De finibus serves as the basis for many dummy text or Lorem Ipsum generators. Based on De finibus
+        these generators automatically create longer sections of the Lorem Ipsum text or various other filler texts.
+
+
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

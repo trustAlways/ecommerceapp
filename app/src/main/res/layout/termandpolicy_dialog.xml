@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:padding="2dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/llrt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:elevation="5dp"
+            android:background="@drawable/x_toggle">
+
+            <TextView
+                android:id="@+id/term_and_policy"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Terms And Policy"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:gravity="center"
+                />
+
+
+           <!-- <ImageView
+                android:id="@+id/hideDialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:src="@drawable/crosee_icon" />
+-->
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_termpolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/x_toggle">
+
+            <TextView
+                android:id="@+id/policies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/term_condition"
+                android:textSize="13dp"
+                android:gravity="left"
+                android:layout_margin="10dp"
+               />
+
+            <Button
+                android:id="@+id/Agree_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Agree"
+                android:background="@color/red"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

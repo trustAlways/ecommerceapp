@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:background="@color/login_bar">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Checkout"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:background="@drawable/x_et_bg"
+                        >
+
+                        <TextView
+                            android:id="@+id/fg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Payable Amount"
+                            android:visibility="visible"
+                            android:maxLength="50"
+                            android:textSize="18sp"
+                            android:singleLine="true"
+                            android:textColor="@color/red" />
+
+                        <TextView
+                            android:id="@+id/payable_ammount"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".8"
+                            android:hint="Amount to pay"
+                            android:background="@drawable/x_et_reg_log_bg"
+                            android:maxLength="50"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textColor="#132a49" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="User Detail"
+                            android:textColor="@color/red"
+                            android:textSize="15sp"
+                            android:background="@color/grey_light"
+                            android:padding="6dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/x_et_bg"
+                            android:hint="First Name"
+                            android:maxLength="50"
+                            android:enabled="false"
+                            android:textSize="16sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/firstnameerr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:background="@color/white"
+                                android:textColor="@color/red"
+                                />
+
+                        <EditText
+                            android:id="@+id/lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/x_et_bg"
+                            android:hint="Last Name"
+                            android:enabled="false"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:maxLength="50"
+                            android:textSize="16sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/lastnameerr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:background="@color/white"
+                                android:textColor="@color/red"
+                                />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Billing Detail"
+                         android:textColor="@color/red"
+                         android:textSize="15sp"
+                         android:background="@color/grey_light"
+                         android:padding="6dp"/>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="70dp"
+                         android:orientation="vertical">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="50dp"
+                             android:layout_marginLeft="5dp"
+                             android:layout_marginRight="5dp"
+                             android:layout_marginTop="5dp"
+                             android:orientation="horizontal"
+                             android:weightSum="1"
+                             android:background="@drawable/x_et_bg"
+                             >
+
+                             <ImageView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".15"
+                                 android:src="@drawable/email_icon"
+                                 android:padding="5dp"
+                                 />
+
+                             <EditText
+                                 android:id="@+id/billing_email"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".8"
+                                 android:hint="Enter Your Billing Email"
+                                 android:background="@drawable/x_et_reg_log_bg"
+                                 android:maxLength="50"
+                                 android:enabled="false"
+                                 android:textSize="16sp"
+                                 android:singleLine="true"
+                                 android:textColor="@color/black" />
+
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="20dp"
+                             android:orientation="vertical">
+                             <TextView
+                                 android:id="@+id/billing_email_err"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:background="@color/white"
+                                 android:hint="email"
+                                 android:visibility="gone"
+                                 android:layout_marginRight="0dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:maxLength="50"
+                                 android:singleLine="true"
+                                 android:textColor="@color/red" />
+
+                         </LinearLayout>
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="70dp"
+                         android:orientation="vertical">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="50dp"
+                             android:layout_marginLeft="5dp"
+                             android:layout_marginRight="5dp"
+                             android:orientation="horizontal"
+                             android:weightSum="1"
+                             android:background="@drawable/x_et_bg"
+                             >
+
+                             <ImageView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".15"
+                                 android:src="@drawable/mobile_icon"
+                                 android:padding="5dp"
+                                 />
+
+                             <EditText
+                                 android:id="@+id/billing_phone"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".8"
+                                 android:hint="Enter Your Billing Phone Number"
+                                 android:background="@drawable/x_et_reg_log_bg"
+                                 android:maxLength="50"
+                                 android:enabled="false"
+                                 android:textSize="16sp"
+                                 android:singleLine="true"
+                                 android:textColor="@color/black" />
+
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="20dp"
+                             android:orientation="vertical">
+                             <TextView
+                                 android:id="@+id/billing_phone_err"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:background="@color/white"
+                                 android:hint="email"
+                                 android:visibility="gone"
+                                 android:layout_marginRight="0dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:maxLength="50"
+                                 android:singleLine="true"
+                                 android:textColor="@color/red" />
+
+                         </LinearLayout>
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="70dp"
+                         android:orientation="vertical">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="50dp"
+                             android:layout_marginLeft="5dp"
+                             android:layout_marginRight="5dp"
+                             android:orientation="horizontal"
+                             android:weightSum="1"
+                             android:background="@drawable/x_et_bg"
+                             >
+
+                             <ImageView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".15"
+                                 android:src="@drawable/location_at"
+                                 android:padding="5dp"
+                                 />
+
+                             <EditText
+                                 android:id="@+id/billing_address_1"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".8"
+                                 android:hint="Enter Your Billing Address one"
+                                 android:background="@drawable/x_et_reg_log_bg"
+                                 android:maxLength="50"
+                                 android:inputType="textNoSuggestions|textCapWords"
+                                 android:textSize="16sp"
+                                 android:singleLine="true"
+                                 android:textColor="@color/black" />
+
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="20dp"
+                             android:orientation="vertical">
+                             <TextView
+                                 android:id="@+id/billing_address_1err"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:background="@color/white"
+                                 android:hint="email"
+                                 android:visibility="gone"
+                                 android:layout_marginRight="0dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:maxLength="50"
+                                 android:singleLine="true"
+                                 android:textColor="@color/red" />
+
+                         </LinearLayout>
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="70dp"
+                         android:orientation="vertical">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="50dp"
+                             android:layout_marginLeft="5dp"
+                             android:layout_marginRight="5dp"
+                             android:orientation="horizontal"
+                             android:weightSum="1"
+                             android:background="@drawable/x_et_bg"
+                             >
+
+                             <ImageView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".15"
+                                 android:src="@drawable/location_at"
+                                 android:padding="5dp"
+                                 />
+
+                             <EditText
+                                 android:id="@+id/billing_address_2"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".8"
+                                 android:hint="Enter Your Billing Address two"
+                                 android:background="@drawable/x_et_reg_log_bg"
+                                 android:maxLength="50"
+                                 android:inputType="textNoSuggestions|textCapWords"
+                                 android:textSize="16sp"
+                                 android:singleLine="true"
+                                 android:textColor="@color/black" />
+
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="20dp"
+                             android:orientation="vertical">
+                             <TextView
+                                 android:id="@+id/billing_address_2err"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:background="@color/white"
+                                 android:hint="email"
+                                 android:visibility="gone"
+                                 android:layout_marginRight="0dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:maxLength="50"
+                                 android:singleLine="true"
+                                 android:textColor="@color/red" />
+
+                         </LinearLayout>
+                     </LinearLayout>
+
+                 </LinearLayout>
+
+                   <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:background="@drawable/x_et_bg"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".15"
+                                android:src="@drawable/loginemail"
+                                android:padding="5dp"
+                                />
+
+                            <EditText
+                                android:id="@+id/signUpName"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".8"
+                                android:hint="Enter Your Billing Address"
+                                android:background="@drawable/x_et_reg_log_bg"
+                                android:maxLength="50"
+                                android:textSize="16sp"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/signUpNameerr"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/white"
+                                android:hint="email"
+                                android:visibility="gone"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red" />
+
+                        </LinearLayout>
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shipping Detail"
+                            android:textColor="@color/red"
+                            android:background="@color/grey_light"
+                            android:textSize="15sp"
+                            android:padding="6dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:background="@drawable/x_et_bg"
+                                >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".15"
+                                    android:src="@drawable/user_icon"
+                                    android:padding="5dp"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/shipping_full_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8"
+                                    android:hint="Enter Your Shipping Full Name"
+                                    android:background="@drawable/x_et_reg_log_bg"
+                                    android:maxLength="50"
+                                    android:inputType="textCapWords"
+                                    android:textSize="16sp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="22dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/shipping_full_name_err"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:background="@color/white"
+                                    android:text="emailgfgfgf"
+                                    android:visibility="gone"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:maxLength="50"
+                                    android:singleLine="true"
+                                    android:textColor="@color/red" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:background="@drawable/x_et_bg"
+                                >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".15"
+                                    android:src="@drawable/location_at"
+                                    android:padding="5dp"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/shipping_address_one"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8"
+                                    android:hint="Enter Your Shipping Address One"
+                                    android:background="@drawable/x_et_reg_log_bg"
+                                    android:maxLength="50"
+                                    android:inputType="textNoSuggestions|textCapWords"
+
+                                    android:textSize="16sp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/shipping_address_one_err"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:hint="email"
+                                    android:visibility="gone"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:maxLength="50"
+                                    android:singleLine="true"
+                                    android:textColor="@color/red" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:background="@drawable/x_et_bg"
+                                >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".15"
+                                    android:src="@drawable/location_at"
+                                    android:padding="5dp"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/shipping_address_two"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8"
+                                    android:hint="Enter Your Shipping Address Two"
+                                    android:background="@drawable/x_et_reg_log_bg"
+                                    android:maxLength="50"
+                                    android:inputType="textNoSuggestions|textCapWords"
+                                    android:textSize="16sp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/shipping_address_two_err"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:hint="email"
+                                    android:visibility="gone"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:maxLength="50"
+                                    android:singleLine="true"
+                                    android:textColor="@color/red" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:background="@drawable/x_et_bg"
+                                >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".15"
+                                    android:src="@drawable/mobile_icon"
+                                    android:padding="5dp"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/shipping_phone_no"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".8"
+                                    android:hint="Enter Your Shipping Phone Number"
+                                    android:background="@drawable/x_et_reg_log_bg"
+                                    android:maxLength="10"
+                                    android:inputType="number"
+                                    android:textSize="16sp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/shipping_phone_no_err"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:hint="email"
+                                    android:visibility="gone"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:maxLength="50"
+                                    android:singleLine="true"
+                                    android:textColor="@color/red" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Mode"
+                            android:textColor="@color/red"
+                            android:background="@color/grey_light"
+                            android:textSize="15sp"
+                            android:padding="6dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:padding="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:background="@drawable/x_et_bg">
+
+                            <RadioGroup
+                                android:id="@+id/option"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:checkedButton="@+id/block_scenario_off"
+                                android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="0dip"
+                                android:layout_weight=".26"
+                                android:text="Cash Pay"
+                                android:singleLine="false"
+                                android:checked="true"
+                                android:buttonTint="@color/red"
+                                android:textSize="11sp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/option1"
+                               />
+                            <RadioButton
+                                android:layout_width="0dip"
+                                android:layout_weight=".32"
+                                android:text="Credit card"
+                                android:singleLine="false"
+                                android:buttonTint="@color/red"
+                                android:textSize="11sp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/option2"/>
+                            <RadioButton
+                                android:layout_width="0dip"
+                                android:layout_weight=".35"
+                                android:text="Mobile Money"
+                                android:buttonTint="@color/red"
+                                android:singleLine="false"
+                                android:textSize="11sp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/option3" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/paymnt_modeerr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:hint="email"
+                                android:visibility="gone"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="0dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            >
+
+                            <CheckBox
+                                android:id="@+id/checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/red"/>
+
+                            <TextView
+                                android:id="@+id/termandpolicy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:text="I agree with Medaasi? Term and Policy"
+                                android:clickable="true" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/termconditionerr"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:background="@color/white"
+                                android:hint="email"
+                                android:visibility="gone"
+                                android:padding="1dp"
+                                android:layout_marginLeft="70dp"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/red"  />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="70dp"
+                         android:layout_marginBottom="10dp"
+                         android:layout_marginTop="5dp"
+                         android:orientation="horizontal">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:orientation="vertical">
+
+                             <EditText
+                                 android:id="@+id/signInPassword"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="50dp"
+                                 android:hint="Password"
+                                 android:background="@drawable/x_et_bg"
+                                 android:padding="10dp"
+                                 android:maxLength="50"
+                                 android:singleLine="true"
+                                 android:textColor="@color/black" />
+
+                             <TextView
+                                 android:id="@+id/signInPassworderr"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="50dp"
+                                 android:background="@color/transparent"
+                                 android:hint="mobile"
+                                 android:layout_marginRight="0dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:maxLength="50"
+                                 android:visibility="gone"
+                                 android:singleLine="true"
+                                 android:textColor="@color/red" />
+
+                         </LinearLayout>
+                     </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <Button
+                            android:id="@+id/bt_confirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginRight="70dp"
+                            android:background="#d94040"
+                            android:text="Confirm"
+                            android:textColor="@color/white"
+                            />
+
+
+                    </LinearLayout>
+
+                  <!--  <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/bt_regToLog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Already Registered? Click here to Login"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>-->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

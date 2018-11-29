@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@android:color/black"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rr_led_Descp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size14"
+        android:background="@drawable/x_et_bg"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rr_first_descp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <RelativeLayout
+                android:id="@+id/rr_img"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/mrg1"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:visibility="visible"
+                    android:padding="5dp"
+                    android:src="@drawable/logo"
+                    android:scaleType="centerInside"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr__txt_descp"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/mrg2"
+                android:layout_toRightOf="@+id/rr_img"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rr_txt_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rr_proname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size0">
+
+
+                        <TextView
+                            android:id="@+id/txt_product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product Name"
+                            android:singleLine="true"
+                            android:textColor="@color/login_bar"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rr_products_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size0"
+                        android:layout_below="@+id/rr_proname">
+
+                        <TextView
+                            android:id="@+id/txt_product_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="product code/: SKU"
+                            android:textSize="10dp"
+                            android:visibility="visible"
+                            />
+
+                    </RelativeLayout>
+                   <!-- <RelativeLayout
+                        android:id="@+id/rr_txt_distributor_name"
+                        android:layout_width="@dimen/size8"
+                        android:layout_height="@dimen/txt_size_xxxlgg"
+                        android:layout_below="@+id/rr_products_prize"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/txt_distributor_namee"
+                            android:layout_width="@dimen/size4"
+                            android:layout_height="wrap_content"
+                            android:text="@string/distributor_name_col"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/mrg2" />
+                        <TextView
+                            android:id="@+id/txt_distributor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_distributor_namee"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/mrg2" />
+
+
+                    </RelativeLayout>-->
+
+
+                    <RelativeLayout
+                        android:id="@+id/rr_txt_batchnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size0"
+                        android:layout_below="@+id/rr_products_code">
+                        <TextView
+                            android:id="@+id/txt_ordered_qty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ordered Quantity: 1units"
+                            android:textSize="10dp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rr_txt_txt_productquantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size0"
+                        android:layout_below="@+id/rr_txt_batchnumber">
+                        <TextView
+                            android:id="@+id/txt_product_pr_prc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price Per Unit"
+                            android:textSize="10dp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr__txt_descp1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/mrg2"
+                android:layout_toRightOf="@+id/rr__txt_descp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/txt_order_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2500000"
+                    android:textColor="@color/login_bar"
+                    android:textSize="12dp"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

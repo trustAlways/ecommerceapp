@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.medassi.ecommerce.user">
+
+    <permission
+        android:name="com.medassi.ecommerce.user.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.example.candid_4.myapplication.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="com.medassi.ecommerce.user.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.candid_4.myapplication.permission.C2D_MESSAGE" />
+
+    <!--
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    -->
+    <application
+        android:name=".Activity.App"
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:icon="@mipmap/app_logo_icon_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.Activity.SplashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.Activity.Registration"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".Activity.Activity.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--
+                    The API key for Google Maps-based APIs is defined as a string resource.
+                    (See the file "res/values/google_maps_api.xml").
+                    Note that the API key is linked to the encryption key used to sign the APK.
+                    You need a different API key for each encryption key, including the release key that is used to
+                    sign the APK for publishing.
+                    You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCSJ9BU8xtcY-fmXrZ4lZQDWpPqtiAb_UI" />
+        -->
+        <!-- Goolge Maps API Key -->
+        <!--
+            <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCSJ9BU8xtcY-fmXrZ4lZQDWpPqtiAb_UI" />
+        -->
+
+        <receiver
+            android:name=".Activity.MyReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+            <activity
+            android:name=".Activity.Activity.DetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        -->
+        <activity
+            android:name=".Activity.Activity.DialogeDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Activity.Activity.RecyclerViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustPan" />
+        <!--
+            <activity
+            android:name=".Activity.Activity.MyCartActivty"
+            android:screenOrientation="portrait" />
+        -->
+        <!--
+            <activity
+            android:name=".Activity.Activity.Changepassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <!-- debug== AIzaSyACiZJz8wflLw4pQT6I2z4tznCM8-e2Wc4-->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDlJjPeXKYmsRBEqsc0mpxh1nMxJ7M0QQ4" />
+
+        <!--
+            <activity
+            android:name=".Activity.Activity.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        -->
+        <!--
+            <activity
+            android:name=".Activity.Activity.UpdateProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        -->
+        <activity
+            android:name=".Activity.Activity.User_Reset_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--
+            <activity
+            android:name=".Activity.Activity.OrderHistory"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        -->
+        <!--
+            <activity
+            android:name=".Activity.Activity.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        -->
+
+
+        <!-- Firebase Notifications -->
+        <service android:name=".Activity.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Activity.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- ./Firebase Notifications -->
+
+
+        <!--         <activity android:name=".Activity.Activity.ContactusActivity"></activity> -->
+        <activity android:name=".Activity.Activity.NewOrderHistory"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" ></activity>
+    </application>
+
+</manifest>

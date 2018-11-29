@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_item_details"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity.MapsActivity">
+
+    <!--<ScrollView
+        android:id="@+id/scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+-->
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/login_bar">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Search Results"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+
+            />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/search_for"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You searched For"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".17">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/mapview1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@color/red"
+                    android:text="Map View"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:visibility="visible"
+                    android:elevation="5dp"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/mapview2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:visibility="gone"
+                    android:background="@drawable/x_toggle"
+                    android:text="Map View"
+                    android:gravity="center"
+                    android:elevation="5dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/red"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/searched_product_list1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@drawable/x_toggle"
+                    android:text="List View"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:elevation="5dp"
+                    android:textSize="18dp"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/red"
+                    />
+
+                <TextView
+                    android:id="@+id/searched_product_list2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@color/red"
+                    android:visibility="gone"
+                    android:elevation="5dp"
+                    android:text="List View"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/show_search_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12 Results found for mobile stockiest near by your current location "
+                android:textSize="12dp"
+                android:padding="7dp"
+                android:textColor="@color/grey"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Linear_map"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:visibility="visible"
+            android:background="#f9f9f9"
+            android:layout_marginTop="5dp">
+
+            <include layout="@layout/activity_maps"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:visibility="visible"></ListView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/infotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click on the stockiest name for product details"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            />
+
+    </LinearLayout>
+</LinearLayout>

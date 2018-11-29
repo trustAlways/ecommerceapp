@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "1046525602221",
+    "firebase_url": "https://medaasi-62c3b.firebaseio.com",
+    "project_id": "medaasi-62c3b",
+    "storage_bucket": "medaasi-62c3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046525602221:android:7adf1f0763e89005",
+        "android_client_info": {
+          "package_name": "com.example.candid_4.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046525602221-akjifgi7pllnne1tjnlcvegj9k9th184.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.candid_4.myapplication",
+            "certificate_hash": "5bf560ae0b0d75ff8299540bfa7aa3fa5df0446e"
+          }
+        },
+        {
+          "client_id": "1046525602221-8vk64pdbgthhcsll2hqf96ggsq07qh9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmPbct4j2C9zKK3Sb-JIziK_5PpSc0-gM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046525602221-8vk64pdbgthhcsll2hqf96ggsq07qh9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046525602221:android:be3270497a0cdec5",
+        "android_client_info": {
+          "package_name": "com.medassi.ecommerce.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046525602221-8vk64pdbgthhcsll2hqf96ggsq07qh9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmPbct4j2C9zKK3Sb-JIziK_5PpSc0-gM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

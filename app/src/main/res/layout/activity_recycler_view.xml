@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"></FrameLayout>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ed1c24"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/menu_open"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:padding="17dp"
+                android:src="@drawable/minu_icon" />
+
+            <TextView
+                android:id="@+id/header_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center_vertical"
+                android:text="Search Products"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/item_counter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".13">
+
+                <ImageView
+                    android:id="@+id/addtocart"
+                    android:layout_width="30dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shopping_cart_icon" />
+
+                <TextView
+                    android:id="@+id/item_counte1"
+                    android:layout_width="17dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_text_cart_item"
+                    android:text="0"
+                    android:singleLine="true"
+                    android:gravity="top|center"
+                    android:visibility="visible"
+                    android:textColor="@color/black" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/user_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight=".12"
+                android:padding="5dp"
+                android:src="@drawable/user_new_icon" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@drawable/navigation_bg"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/nav_header_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/lv_nav_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/login_bar"
+            android:divider="@null"
+            />
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
